@@ -1,0 +1,187 @@
+[
+    {
+        "outputFile": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 56,
+                    "endOffset": 107
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 56,
+                        "endOffset": 111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 112,
+                    "endColumn": 52,
+                    "endOffset": 160
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 179,
+                        "endColumn": 52,
+                        "endOffset": 227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 165,
+                    "endColumn": 60,
+                    "endOffset": 221
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 117,
+                        "endColumn": 60,
+                        "endOffset": 173
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 226,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 512
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 517,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 672
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 525,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 682
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 56,
+                    "endOffset": 107
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 56,
+                        "endOffset": 111
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 112,
+                    "endColumn": 52,
+                    "endOffset": 160
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 179,
+                        "endColumn": 52,
+                        "endOffset": 227
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 165,
+                    "endColumn": 60,
+                    "endOffset": 221
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 226,
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "endOffset": 304
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 309,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 376
+                },
+                "from": {
+                    "file": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            }
+        ]
+    }
+]
