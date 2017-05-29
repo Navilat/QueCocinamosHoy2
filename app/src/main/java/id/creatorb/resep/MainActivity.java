@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 				if (adapter.getCount() == 0) {
 					Toast.makeText(
 							this,
-							"Tidak ditemukan data dengan kata kunci " + edit_db
+							"No se encontró ninguna receta con el nombre " + edit_db
 									+ "", Toast.LENGTH_SHORT).show();
 				} else {
 					lv.setAdapter(adapter);
