@@ -20,9 +20,19 @@ public class DB_Resep extends SQLiteOpenHelper {
 
 		ContentValues values = new ContentValues();
 		values.put("_id", "1");
-		values.put("nama", "Bubur Candil");
-		values.put("bahan", "Tepung ketan putih	200 gr, Tepung beras putih 50 gr, Air 100 ml, Pewarna makanan (merah,hijau,kuning) secukupnya, Gula jawa / gula merah 200 gr, Air 1 ltr, Santan 500 ml, Garam ½ sdt, Daun pandan 1 lbr");
-		values.put("cara","Pertama Masukkan tepung ketan dan tepung beras dalam wadah, Kemudian tuangkan air sedikit demi sedikit hingga kalis (kental dan lengket), Selanjutnya Basahi tangan dengan air lalu uleni lagi bila terasa adonan masih kurang kalis. Setelah itu pisahkan adonan menjadi 3 bagian, lalu berikan pewarna pada masing-masing adonan, Setelah itu bentuk bulat-bulat seperti kelereng. Masak gula jawa dan air 1 ltr, biarkan hingga mendidih dan gula larut lalu saring kemudian didihkan lagi, lalu cemplungkan bulatan adonan kedalamnya, biarkan hingga mengapung. Lalu masukkan santan,garam,daun pandan. Aduk rata hingga mendidih, dan kini bubur candil siap disajikan");
+		values.put("nama", "ALBÓNDIGAS DE CERDO Y QUINOA");
+		values.put("bahan", "1/2 taza de quinoa\n" +
+				"500 gramos de cerdo molido\n" +
+				"6 cebollines picados finos parte blanca y 3cm. de la verde\n" +
+				"2 huevos\n" +
+				"1 cucharadita de sal gruesa\n" +
+				"1/2 cucharadita de orégano seco\n" +
+				"1/2 cucharadita de comino");
+		values.put("cara","Precalienta tu horno a 425F o 210C. Cubre la lata del horno con papel aluminio o pergamino.\n" +
+				"Lava la quinoa en un colador bajo agua corriendo hasta que deje de salir espuma. Coloca en una olla pequeña con 1 taza de agua, pizca de sal, revuelve y cocina a fuego medio-alto. Apenas suelte el hervor, baja el fuego al mínimo y cocina por 15 minutos. Destapa, revuelve con un tenedor y separa.\n" +
+				"En un bol coloca los huevos, la sal, orégano y comino, bate 20 segundos con un tenedor agrega el cerdo molido y la quinoa. Mezcla muy bien.\n" +
+				"Con una cuchara saca porciones de la mezcla y forma las albóndigas de un tamaño similar a una bola de golf. Coloca ordenadas en la lata de horno y hornea por 15 minutos. La temperatura interna debe ser superior a 165F o 73C.\n" +
+				"Sirve caliente o tibias.");
 		values.put("img", R.drawable.buburcandil);
 		db.insert("resep", "_id", values);
 

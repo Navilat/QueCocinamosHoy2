@@ -104,7 +104,6 @@ public class MainActivity extends Activity {
 	public void nueva_receta(View v) {
 		Log.d(getLocalClassName(), "Creando nueva receta - Click");
 		ContentValues values = new ContentValues();
-		//values.put("_id", "8"); //Esta seteado autoincremental, so probar quitarlo luego.
 		values.put("nama", "Calzones Rotos");
 		values.put("bahan", "Ingredientes CR");
 		values.put("cara","Pasos a seguir CR");
@@ -134,7 +133,36 @@ public class MainActivity extends Activity {
 		iIntent.putExtra("dataCara", cara);
 		iIntent.putExtra("dataId", _id);
 		setResult(RESULT_OK, iIntent);
-		startActivityForResult(iIntent, 99);
+		startActivityForResult(iIntent, 99); //RESULT_CODE de detalle: 99
+	}
+
+	// Llamado cuando se cierra el activity de Detalle
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+
+		// check that it is the SecondActivity with an OK result
+		//Se verifica que es el activity de Detalle
+		if (requestCode == 99) {
+			if (resultCode == RESULT_OK) {
+
+				int res;
+
+				String id_del = data.getStringExtra("id_del").trim();
+
+				Log.d(getLocalClassName(), "Intentando borrar receta con id: " + id_del + "en el Main Activity");
+
+				//Borrar receta
+				try{
+					res = db.delete("resep", "_id = ?",
+							new String[] { id_del });
+					//res = db.delete("resep", "_id='" + 9 + "'", null);
+					Log.d(getLocalClassName(), "Resultado operacion Delete: " + res);
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
 	}
 
 }
