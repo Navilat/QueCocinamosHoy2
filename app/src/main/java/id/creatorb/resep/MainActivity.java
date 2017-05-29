@@ -1,5 +1,6 @@
 package id.creatorb.resep;
 
+import android.content.ContentValues;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -101,7 +102,14 @@ public class MainActivity extends Activity {
 	 */
 	@SuppressWarnings("deprecation")
 	public void nueva_receta(View v) {
-		Log.d(getLocalClassName(), "Crear nueva receta - Click");
+		Log.d(getLocalClassName(), "Creando nueva receta - Click");
+		ContentValues values = new ContentValues();
+		//values.put("_id", "8"); //Esta seteado autoincremental, so probar quitarlo luego.
+		values.put("nama", "Calzones Rotos");
+		values.put("bahan", "Ingredientes CR");
+		values.put("cara","Pasos a seguir CR");
+		values.put("img", R.drawable.buburcandil); //Cambiar luego
+		db.insert("resep", "_id", values);
 	}
 
 	public void detail(int position) {
@@ -116,6 +124,7 @@ public class MainActivity extends Activity {
 			nama = cursor.getString(cursor.getColumnIndex("nama"));
 			bahan = cursor.getString(cursor.getColumnIndex("bahan"));
 			cara = cursor.getString(cursor.getColumnIndex("cara"));
+			_id = cursor.getString(cursor.getColumnIndex("_id"));
 		}
 
 		Intent iIntent = new Intent(this, DB_Parse.class);
@@ -123,6 +132,7 @@ public class MainActivity extends Activity {
 		iIntent.putExtra("dataNama", nama);
 		iIntent.putExtra("dataBahan", bahan);
 		iIntent.putExtra("dataCara", cara);
+		iIntent.putExtra("dataId", _id);
 		setResult(RESULT_OK, iIntent);
 		startActivityForResult(iIntent, 99);
 	}

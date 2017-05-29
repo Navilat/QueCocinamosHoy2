@@ -28,7 +28,7 @@
         </activity>
         <activity
             android:name=".DB_Parse"
-            android:label="Bahan dan Cara" >
+            android:label="Recetas" >
         </activity>
     </application>
 

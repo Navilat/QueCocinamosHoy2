@@ -3,7 +3,6 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/paper"
     android:orientation="vertical" >
 
     <ImageView
@@ -38,7 +37,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/iv_detail"
                 android:layout_marginTop="3dp"
-                android:text="Resep"
+                android:text="Nombre"
                 android:textColor="#6e7b8b"
                 android:textStyle="bold" />
 
@@ -53,12 +52,22 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:id="@+id/id_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvNama"
+                android:text="ID temp"
+                android:textColor="#8b7b8b"
+                android:textStyle="italic" />
+
+            <TextView
                 android:id="@+id/tvTD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/tvNama"
-                android:text="Bahan"
+                android:text="Ingredientes"
                 android:textColor="#6e7b8b"
                 android:textStyle="bold" />
 
@@ -78,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/tvBahan"
-                android:text="Cara Memasak"
+                android:text="Preparación"
                 android:textColor="#6e7b8b"
                 android:textStyle="bold" />
 
