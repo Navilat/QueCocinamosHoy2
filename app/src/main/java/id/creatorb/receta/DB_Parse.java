@@ -1,4 +1,4 @@
-package id.creatorb.resep;
+package id.creatorb.receta;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,15 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Gallery;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DB_Parse extends Activity {
 	ImageView Im;
-	TextView tv_nama, tv_bahan, tv_cara, id;
-	Gallery gallery;
+	TextView tv_nombre, tv_ingredientes, tv_pasos, id;
 	ImageSwitcher imageSwitcher;
 	Integer[] imageIDs = new Integer[3];
 	int msg_im;
@@ -23,26 +21,26 @@ public class DB_Parse extends Activity {
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.resep);
-        db = (new DB_Resep(this)).getWritableDatabase();
+		setContentView(R.layout.receta);
+        db = (new DB_Receta(this)).getWritableDatabase();
 
-		Intent iIdentifikasi = getIntent();
-		msg_im = iIdentifikasi.getIntExtra("dataIM", 0);
-		String msg_nama = iIdentifikasi.getStringExtra("dataNama");
-		String msg_bahan = iIdentifikasi.getStringExtra("dataBahan");
-		String msg_cara = iIdentifikasi.getStringExtra("dataCara");
-		String msg_id = iIdentifikasi.getStringExtra("dataId");
+		Intent iIntent = getIntent();
+		msg_im = iIntent.getIntExtra("dataIM", 0);
+		String msg_nombre = iIntent.getStringExtra("dataNombre");
+		String msg_ingredientes = iIntent.getStringExtra("dataIngredientes");
+		String msg_pasos = iIntent.getStringExtra("dataPasos");
+		String msg_id = iIntent.getStringExtra("dataId");
 
 		Im = (ImageView) findViewById(R.id.iv_detail);
-		tv_nama = (TextView) findViewById(R.id.tvNama);
-		tv_bahan = (TextView) findViewById(R.id.tvBahan);
-		tv_cara = (TextView) findViewById(R.id.tvCara);
+		tv_nombre = (TextView) findViewById(R.id.tvNombre);
+		tv_ingredientes = (TextView) findViewById(R.id.tvIngredientes);
+		tv_pasos = (TextView) findViewById(R.id.tvPasos);
 		id = (TextView) findViewById(R.id.id_temp);
 
 		Im.setImageResource(msg_im);
-		tv_nama.setText(msg_nama);
-		tv_bahan.setText(msg_bahan);
-		tv_cara.setText(msg_cara);
+		tv_nombre.setText(msg_nombre);
+		tv_ingredientes.setText(msg_ingredientes);
+		tv_pasos.setText(msg_pasos);
 		id.setText(msg_id);
 
 

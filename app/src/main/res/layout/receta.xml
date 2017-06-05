@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/buburcandil" />
+        android:src="@drawable/albondigas_de_cerdo_y_quinoa" />
 
     <Button
         android:id="@+id/button1"
@@ -43,7 +43,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvNama"
+                android:id="@+id/tvNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@+id/tvNama"
+                android:layout_below="@+id/tvNombre"
                 android:text="ID temp"
                 android:textColor="#8b7b8b"
                 android:textStyle="italic" />
@@ -67,13 +67,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@+id/tvNama"
+                android:layout_below="@+id/tvNombre"
                 android:text="Ingredientes"
                 android:textColor="#6e7b8b"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvBahan"
+                android:id="@+id/tvIngredientes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -87,13 +87,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:layout_below="@+id/tvBahan"
+                android:layout_below="@+id/tvIngredientes"
                 android:text="Preparación"
                 android:textColor="#6e7b8b"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvCara"
+                android:id="@+id/tvPasos"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"

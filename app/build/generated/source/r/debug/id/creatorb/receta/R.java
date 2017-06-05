@@ -5,26 +5,20 @@
  * should not be modified by hand.
  */
 
-package id.creatorb.resep;
+package id.creatorb.receta;
 
 public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int buburcandil=0x7f020000;
-        public static final int cumitumiskecap=0x7f020001;
-        public static final int donatmini=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
-        public static final int ic_launcher2=0x7f020004;
-        public static final int ic_launcher_backup=0x7f020005;
-        public static final int nasiudukrempah=0x7f020006;
-        public static final int paper=0x7f020007;
-        public static final int perkedeljagung=0x7f020008;
-        public static final int splashbe=0x7f020009;
-        public static final int splashbe_backup=0x7f02000a;
-        public static final int terongbalado=0x7f02000b;
-        public static final int tumisbuncistelor=0x7f02000c;
-        public static final int udangrempahmentega=0x7f02000d;
+        public static final int albondigas_de_cerdo_y_quinoa=0x7f020000;
+        public static final int alfajores_con_chancaca_atoradores_rc=0x7f020001;
+        public static final int alfajores_de_chocolate_estilo_sausalito=0x7f020002;
+        public static final int arroz_con_leche_y_manjar=0x7f020003;
+        public static final int betarragas_rellenas=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int splashbe=0x7f020006;
+        public static final int splashbe_backup=0x7f020007;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f060008;
@@ -42,18 +36,18 @@ public final class R {
         public static final int nr=0x7f060006;
         public static final int scrollView1=0x7f06000b;
         public static final int textView2=0x7f06000d;
-        public static final int tvBahan=0x7f060011;
-        public static final int tvCara=0x7f060013;
+        public static final int tvIngredientes=0x7f060011;
         public static final int tvK=0x7f060012;
-        public static final int tvNama=0x7f06000e;
+        public static final int tvNombre=0x7f06000e;
+        public static final int tvPasos=0x7f060013;
         public static final int tvTD=0x7f060010;
-        public static final int tv_nama=0x7f060001;
+        public static final int tv_nombre=0x7f060001;
     }
     public static final class layout {
         public static final int isi_lv=0x7f030000;
         public static final int main=0x7f030001;
-        public static final int resep=0x7f030002;
-        public static final int splashbe=0x7f030003;
+        public static final int receta=0x7f030002;
+        public static final int splashinit=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f050000;

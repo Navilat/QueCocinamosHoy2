@@ -34,9 +34,9 @@
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 179,
+                        "startOffset": 181,
                         "endColumn": 52,
-                        "endOffset": 227
+                        "endOffset": 229
                     }
                 }
             },
@@ -45,8 +45,8 @@
                     "startLine": 4,
                     "startColumn": 4,
                     "startOffset": 165,
-                    "endColumn": 60,
-                    "endOffset": 221
+                    "endColumn": 62,
+                    "endOffset": 223
                 },
                 "from": {
                     "file": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\values\\strings.xml",
@@ -54,8 +54,8 @@
                         "startLine": 4,
                         "startColumn": 4,
                         "startOffset": 117,
-                        "endColumn": 60,
-                        "endOffset": 173
+                        "endColumn": 62,
+                        "endOffset": 175
                     }
                 }
             },
@@ -63,10 +63,10 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 226,
+                    "startOffset": 228,
                     "endLine": 11,
                     "endColumn": 12,
-                    "endOffset": 512
+                    "endOffset": 514
                 },
                 "from": {
                     "file": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\values\\styles.xml",
@@ -84,10 +84,10 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 517,
+                    "startOffset": 519,
                     "endLine": 14,
                     "endColumn": 12,
-                    "endOffset": 672
+                    "endOffset": 674
                 },
                 "from": {
                     "file": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\values\\styles.xml",

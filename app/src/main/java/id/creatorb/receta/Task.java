@@ -1,4 +1,4 @@
-package id.creatorb.resep;
+package id.creatorb.receta;
 
 import android.os.AsyncTask;
 import android.util.Log;

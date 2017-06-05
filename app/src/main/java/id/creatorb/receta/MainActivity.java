@@ -1,4 +1,4 @@
-package id.creatorb.resep;
+package id.creatorb.receta;
 
 import android.content.ContentValues;
 import android.os.Bundle;
@@ -29,15 +29,15 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		db = (new DB_Resep(this)).getWritableDatabase();
+		db = (new DB_Receta(this)).getWritableDatabase();
 		lv = (ListView) findViewById(R.id.lv);
 		et_db = (EditText) findViewById(R.id.et);
 
 		try {
-			cursor = db.rawQuery("SELECT * FROM resep ORDER BY nama ASC", null);
+			cursor = db.rawQuery("SELECT * FROM receta ORDER BY nombre ASC", null);
 			adapter = new SimpleCursorAdapter(this, R.layout.isi_lv, cursor,
-					new String[] { "nama", "bahan", "img" }, new int[] {
-							R.id.tv_nama, R.id.tvBahan, R.id.imV });
+					new String[] { "nombre", "ingredientes", "pasos" }, new int[] {
+							R.id.tv_nombre, R.id.tvIngredientes, R.id.imV });
 			lv.setAdapter(adapter);
 			lv.setTextFilterEnabled(true);
 			lv.setOnItemClickListener(new OnItemClickListener() {
@@ -60,14 +60,14 @@ public class MainActivity extends Activity {
 		String edit_db = et_db.getText().toString();
 		if (!edit_db.equals("")) {
 			try {
-				cursor = db.rawQuery("SELECT * FROM resep WHERE nama LIKE ?",
+				cursor = db.rawQuery("SELECT * FROM receta WHERE nombre LIKE ?",
 						new String[] { "%" + edit_db + "%" });
 				adapter = new SimpleCursorAdapter(
 						this,
 						R.layout.isi_lv,
 						cursor,
-						new String[] { "nama", "bahan", "img" },
-						new int[] { R.id.tv_nama, R.id.tvBahan, R.id.imV });
+						new String[] { "nombre", "ingredientes", "img" },
+						new int[] { R.id.tv_nombre, R.id.tvIngredientes, R.id.imV });
 				if (adapter.getCount() == 0) {
 					Toast.makeText(
 							this,
@@ -81,14 +81,14 @@ public class MainActivity extends Activity {
 			}
 		} else {
 			try {
-				cursor = db.rawQuery("SELECT * FROM resep ORDER BY nama ASC",
+				cursor = db.rawQuery("SELECT * FROM receta ORDER BY nombre ASC",
 						null);
 				adapter = new SimpleCursorAdapter(
 						this,
 						R.layout.isi_lv,
 						cursor,
-						new String[] { "nama", "bahan", "img" },
-						new int[] { R.id.tv_nama, R.id.tvBahan, R.id.imV });
+						new String[] { "nombre", "ingredientes", "img" },
+						new int[] { R.id.tv_nombre, R.id.tvIngredientes, R.id.imV });
 				lv.setAdapter(adapter);
 				lv.setTextFilterEnabled(true);
 			} catch (Exception e) {
@@ -104,33 +104,33 @@ public class MainActivity extends Activity {
 	public void nueva_receta(View v) {
 		Log.d(getLocalClassName(), "Creando nueva receta - Click");
 		ContentValues values = new ContentValues();
-		values.put("nama", "Calzones Rotos");
-		values.put("bahan", "Ingredientes CR");
-		values.put("cara","Pasos a seguir CR");
-		values.put("img", R.drawable.buburcandil); //Cambiar luego
-		db.insert("resep", "_id", values);
+		values.put("nombre", "Calzones Rotos");
+		values.put("ingredientes", "Ingredientes CR");
+		values.put("pasos","Pasos a seguir CR");
+		values.put("img", R.drawable.albondigas_de_cerdo_y_quinoa); //Cambiar luego
+		db.insert("receta", "_id", values);
 	}
 
 	public void detail(int position) {
 		int im = 0;
 		String _id = "";
-		String nama = "";
-		String bahan = "";
-		String cara = "";
+		String nombre = "";
+		String ingredientes = "";
+		String pasos = "";
 		if (cursor.moveToFirst()) {
 			cursor.moveToPosition(position);
 			im = cursor.getInt(cursor.getColumnIndex("img"));
-			nama = cursor.getString(cursor.getColumnIndex("nama"));
-			bahan = cursor.getString(cursor.getColumnIndex("bahan"));
-			cara = cursor.getString(cursor.getColumnIndex("cara"));
+			nombre = cursor.getString(cursor.getColumnIndex("nombre"));
+			ingredientes = cursor.getString(cursor.getColumnIndex("ingredientes"));
+			pasos = cursor.getString(cursor.getColumnIndex("pasos"));
 			_id = cursor.getString(cursor.getColumnIndex("_id"));
 		}
 
 		Intent iIntent = new Intent(this, DB_Parse.class);
 		iIntent.putExtra("dataIM", im);
-		iIntent.putExtra("dataNama", nama);
-		iIntent.putExtra("dataBahan", bahan);
-		iIntent.putExtra("dataCara", cara);
+		iIntent.putExtra("dataNombre", nombre);
+		iIntent.putExtra("dataIngredientes", ingredientes);
+		iIntent.putExtra("dataPasos", pasos);
 		iIntent.putExtra("dataId", _id);
 		setResult(RESULT_OK, iIntent);
 		startActivityForResult(iIntent, 99); //RESULT_CODE de detalle: 99
@@ -141,8 +141,7 @@ public class MainActivity extends Activity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
 
-		// check that it is the SecondActivity with an OK result
-		//Se verifica que es el activity de Detalle
+		//Se verifica que es el activity de Detalle con RESULT_OK
 		if (requestCode == 99) {
 			if (resultCode == RESULT_OK) {
 
@@ -154,9 +153,9 @@ public class MainActivity extends Activity {
 
 				//Borrar receta
 				try{
-					res = db.delete("resep", "_id = ?",
+					res = db.delete("receta", "_id = ?",
 							new String[] { id_del });
-					//res = db.delete("resep", "_id='" + 9 + "'", null);
+					//res = db.delete("receta", "_id='" + 9 + "'", null);
 					Log.d(getLocalClassName(), "Resultado operacion Delete: " + res);
 				}catch (Exception e) {
 					e.printStackTrace();

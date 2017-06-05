@@ -4,6 +4,10 @@
         "source": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\src\\main\\res\\layout\\isi_lv.xml"
     },
     {
+        "merged": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\receta.xml",
+        "source": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\layout\\receta.xml"
+    },
+    {
         "merged": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
         "source": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\layout\\main.xml"
     },
@@ -18,6 +22,10 @@
     {
         "merged": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splashbe.xml",
         "source": "D:\\Documentos\\AndroidStudioProjects\\Android-Recipe-App-SQLite-Database1\\app\\src\\main\\res\\layout\\splashbe.xml"
+    },
+    {
+        "merged": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splashinit.xml",
+        "source": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\src\\main\\res\\layout\\splashinit.xml"
     },
     {
         "merged": "D:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splashbe.xml",

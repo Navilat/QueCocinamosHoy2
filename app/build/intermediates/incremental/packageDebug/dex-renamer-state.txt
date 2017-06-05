@@ -1,4 +1,4 @@
-#Mon May 29 17:57:43 CLT 2017
+#Mon Jun 05 19:23:32 CLT 2017
 base.0=D\:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=D\:\\Documentos\\AndroidStudioProjects\\QueCocinamosHoy2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
